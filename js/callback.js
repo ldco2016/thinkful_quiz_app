@@ -1,6 +1,7 @@
 function submitAnswers() {
   var total = 5;
   var score = 0;
+
   // Get User Input
   var q1 = document.forms['quizForm']['q1'].value;
   var q2 = document.forms['quizForm']['q2'].value;
@@ -22,7 +23,19 @@ function submitAnswers() {
   // Check answers
   if (q1 == answers[0]) {
     score++;
-  } else if (q2 == answers[1]) {
-    
   }
+  if (q2 == answers[1]) {
+    score++;
+  }
+  if (q3 == answers[2]) {
+    score++;
+  }
+  if (q4 == answers[3]) {
+    score++;
+  }
+  if (q5 == answers[4]) {
+    score++;
+  }
+
+  alert('You scored '+score+' out of ' +total);
 }
